@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        streamOut:
+          destination: stream
+          contentType: application/json
