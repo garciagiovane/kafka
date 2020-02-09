@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class StreamMessage {
 
     private String name;
-    private long timestamp;
+    private String email;
 }

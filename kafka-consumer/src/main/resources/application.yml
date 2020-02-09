@@ -3,4 +3,7 @@ spring:
     stream:
       bindings:
         input:
-          destination: stream
+          destination: email-topic
+          group: processors
+        output:
+          destination: success-topic
