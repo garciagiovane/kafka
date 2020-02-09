@@ -2,6 +2,9 @@ spring:
   cloud:
     stream:
       bindings:
-        streamOut:
-          destination: stream
+        output:
+          destination: email-topic
           contentType: application/json
+        input:
+          destination: success-topic
+          group: finalizers

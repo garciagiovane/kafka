@@ -16,7 +16,6 @@ public class KafkaRestController {
     @PostMapping
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void writeMessage(@RequestBody StreamModel streamModel) {
-        streamModel.setTimestamp(System.currentTimeMillis());
         streamService.writeStreamToTopic(streamModel);
     }
 }
